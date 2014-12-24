@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DestinationData</key>
+	<array>
+		<dict>
+			<key>DestinationName</key>
+			<string>New York City</string>
+			<key>DestinationImage</key>
+			<string>NYCImage</string>
+			<key>DestinationLocation</key>
+			<dict>
+				<key>Title</key>
+				<string>New York City</string>
+				<key>Subtitle</key>
+				<string>A great city</string>
+				<key>Latitude</key>
+				<real>40.712756</real>
+				<key>Longitude</key>
+				<real>-74.006047</real>
+			</dict>
+			<key>Events</key>
+			<array>
+				<string>http://nealgoldstein.com/NYC01.html</string>
+				<string>http://nealgoldstein.com/NYC02.html</string>
+			</array>
+			<key>POIs</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>The Statue of Liberty</string>
+					<key>Subtitle</key>
+					<string>Pro-democracy and anti-monarchy symbol of freedom</string>
+					<key>Latitude</key>
+					<real>40.689244</real>
+					<key>Longitude</key>
+					<real>-74.04451400000001</real>
+				</dict>
+			</array>
+			<key>Weather</key>
+			<string>http://forecast.weather.gov/MapClick.php?zoneid=NYZ072</string>
+		</dict>
+		<dict>
+			<key>DestinationName</key>
+			<string>San Francisco</string>
+			<key>DestinationImage</key>
+			<string>SFImage</string>
+			<key>DestinationLocation</key>
+			<dict>
+				<key>TItle</key>
+				<string>San Francisco</string>
+				<key>Subtitle</key>
+				<string>A great city</string>
+				<key>Latitude</key>
+				<real>37.7793</real>
+				<key>Longitude</key>
+				<real>-122.4192</real>
+			</dict>
+			<key>Events</key>
+			<array>
+				<string>http://nealgoldstein.com/SF01.html</string>
+				<string>http://nealgoldstein.com/SF02.html</string>
+			</array>
+			<key>POIs</key>
+			<array>
+				<dict>
+					<key>TItle</key>
+					<string>Golden Gate Bridge</string>
+					<key>Subtitle</key>
+					<string>An internationally recognized symbol of San Francisco</string>
+					<key>Latitude</key>
+					<real>37.819722</real>
+					<key>Longitude</key>
+					<real>-122.478611</real>
+				</dict>
+			</array>
+			<key>Weather</key>
+			<string>http://forecast.weather.gov/MapClick.php?lat=37.7749295&amp;lon=-122.41941550000001&amp;site=all&amp;smap=1&amp;searchresult=San%20Francisco%2C%20CA%2C%20USA#.Utr2HXn0CeV</string>
+		</dict>
+	</array>
+</dict>
+</plist>
