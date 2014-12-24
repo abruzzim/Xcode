@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF2B3BA01A197CC300DDF2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B3B9F1A197CC300DDF2A7 /* AppDelegate.swift */; };
+		AF2B3BA31A197CC300DDF2A7 /* DeitelWelcome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF2B3BA11A197CC300DDF2A7 /* DeitelWelcome.xcdatamodeld */; };
+		AF2B3BA51A197CC300DDF2A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B3BA41A197CC300DDF2A7 /* ViewController.swift */; };
+		AF2B3BA81A197CC300DDF2A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2B3BA61A197CC300DDF2A7 /* Main.storyboard */; };
+		AF2B3BAA1A197CC300DDF2A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2B3BA91A197CC300DDF2A7 /* Images.xcassets */; };
+		AF2B3BAD1A197CC300DDF2A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2B3BAB1A197CC300DDF2A7 /* LaunchScreen.xib */; };
+		AF2B3BB91A197CC300DDF2A7 /* DeitelWelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2B3BB81A197CC300DDF2A7 /* DeitelWelcomeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF2B3BB31A197CC300DDF2A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2B3B921A197CC300DDF2A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2B3B991A197CC300DDF2A7;
+			remoteInfo = DeitelWelcome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF2B3B9A1A197CC300DDF2A7 /* DeitelWelcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeitelWelcome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2B3B9E1A197CC300DDF2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2B3B9F1A197CC300DDF2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF2B3BA21A197CC300DDF2A7 /* DeitelWelcome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeitelWelcome.xcdatamodel; sourceTree = "<group>"; };
+		AF2B3BA41A197CC300DDF2A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF2B3BA71A197CC300DDF2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF2B3BA91A197CC300DDF2A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF2B3BAC1A197CC300DDF2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AF2B3BB21A197CC300DDF2A7 /* DeitelWelcomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeitelWelcomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2B3BB71A197CC300DDF2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2B3BB81A197CC300DDF2A7 /* DeitelWelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeitelWelcomeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2B3B971A197CC300DDF2A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2B3BAF1A197CC300DDF2A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF2B3B911A197CC300DDF2A7 = {
+			isa = PBXGroup;
+			children = (
+				AF2B3B9C1A197CC300DDF2A7 /* DeitelWelcome */,
+				AF2B3BB51A197CC300DDF2A7 /* DeitelWelcomeTests */,
+				AF2B3B9B1A197CC300DDF2A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2B3B9B1A197CC300DDF2A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B3B9A1A197CC300DDF2A7 /* DeitelWelcome.app */,
+				AF2B3BB21A197CC300DDF2A7 /* DeitelWelcomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2B3B9C1A197CC300DDF2A7 /* DeitelWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B3B9F1A197CC300DDF2A7 /* AppDelegate.swift */,
+				AF2B3BA41A197CC300DDF2A7 /* ViewController.swift */,
+				AF2B3BA61A197CC300DDF2A7 /* Main.storyboard */,
+				AF2B3BA91A197CC300DDF2A7 /* Images.xcassets */,
+				AF2B3BAB1A197CC300DDF2A7 /* LaunchScreen.xib */,
+				AF2B3BA11A197CC300DDF2A7 /* DeitelWelcome.xcdatamodeld */,
+				AF2B3B9D1A197CC300DDF2A7 /* Supporting Files */,
+			);
+			path = DeitelWelcome;
+			sourceTree = "<group>";
+		};
+		AF2B3B9D1A197CC300DDF2A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B3B9E1A197CC300DDF2A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF2B3BB51A197CC300DDF2A7 /* DeitelWelcomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B3BB81A197CC300DDF2A7 /* DeitelWelcomeTests.swift */,
+				AF2B3BB61A197CC300DDF2A7 /* Supporting Files */,
+			);
+			path = DeitelWelcomeTests;
+			sourceTree = "<group>";
+		};
+		AF2B3BB61A197CC300DDF2A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B3BB71A197CC300DDF2A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2B3B991A197CC300DDF2A7 /* DeitelWelcome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2B3BBC1A197CC300DDF2A7 /* Build configuration list for PBXNativeTarget "DeitelWelcome" */;
+			buildPhases = (
+				AF2B3B961A197CC300DDF2A7 /* Sources */,
+				AF2B3B971A197CC300DDF2A7 /* Frameworks */,
+				AF2B3B981A197CC300DDF2A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeitelWelcome;
+			productName = DeitelWelcome;
+			productReference = AF2B3B9A1A197CC300DDF2A7 /* DeitelWelcome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF2B3BB11A197CC300DDF2A7 /* DeitelWelcomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2B3BBF1A197CC300DDF2A7 /* Build configuration list for PBXNativeTarget "DeitelWelcomeTests" */;
+			buildPhases = (
+				AF2B3BAE1A197CC300DDF2A7 /* Sources */,
+				AF2B3BAF1A197CC300DDF2A7 /* Frameworks */,
+				AF2B3BB01A197CC300DDF2A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2B3BB41A197CC300DDF2A7 /* PBXTargetDependency */,
+			);
+			name = DeitelWelcomeTests;
+			productName = DeitelWelcomeTests;
+			productReference = AF2B3BB21A197CC300DDF2A7 /* DeitelWelcomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2B3B921A197CC300DDF2A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mario Abruzzi";
+				TargetAttributes = {
+					AF2B3B991A197CC300DDF2A7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AF2B3BB11A197CC300DDF2A7 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AF2B3B991A197CC300DDF2A7;
+					};
+				};
+			};
+			buildConfigurationList = AF2B3B951A197CC300DDF2A7 /* Build configuration list for PBXProject "DeitelWelcome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF2B3B911A197CC300DDF2A7;
+			productRefGroup = AF2B3B9B1A197CC300DDF2A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2B3B991A197CC300DDF2A7 /* DeitelWelcome */,
+				AF2B3BB11A197CC300DDF2A7 /* DeitelWelcomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2B3B981A197CC300DDF2A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2B3BA81A197CC300DDF2A7 /* Main.storyboard in Resources */,
+				AF2B3BAD1A197CC300DDF2A7 /* LaunchScreen.xib in Resources */,
+				AF2B3BAA1A197CC300DDF2A7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2B3BB01A197CC300DDF2A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2B3B961A197CC300DDF2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2B3BA51A197CC300DDF2A7 /* ViewController.swift in Sources */,
+				AF2B3BA01A197CC300DDF2A7 /* AppDelegate.swift in Sources */,
+				AF2B3BA31A197CC300DDF2A7 /* DeitelWelcome.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2B3BAE1A197CC300DDF2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2B3BB91A197CC300DDF2A7 /* DeitelWelcomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF2B3BB41A197CC300DDF2A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2B3B991A197CC300DDF2A7 /* DeitelWelcome */;
+			targetProxy = AF2B3BB31A197CC300DDF2A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF2B3BA61A197CC300DDF2A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2B3BA71A197CC300DDF2A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF2B3BAB1A197CC300DDF2A7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2B3BAC1A197CC300DDF2A7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF2B3BBA1A197CC300DDF2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF2B3BBB1A197CC300DDF2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF2B3BBD1A197CC300DDF2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeitelWelcome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF2B3BBE1A197CC300DDF2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeitelWelcome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF2B3BC01A197CC300DDF2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeitelWelcomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeitelWelcome.app/DeitelWelcome";
+			};
+			name = Debug;
+		};
+		AF2B3BC11A197CC300DDF2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeitelWelcomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeitelWelcome.app/DeitelWelcome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2B3B951A197CC300DDF2A7 /* Build configuration list for PBXProject "DeitelWelcome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2B3BBA1A197CC300DDF2A7 /* Debug */,
+				AF2B3BBB1A197CC300DDF2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2B3BBC1A197CC300DDF2A7 /* Build configuration list for PBXNativeTarget "DeitelWelcome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2B3BBD1A197CC300DDF2A7 /* Debug */,
+				AF2B3BBE1A197CC300DDF2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF2B3BBF1A197CC300DDF2A7 /* Build configuration list for PBXNativeTarget "DeitelWelcomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2B3BC01A197CC300DDF2A7 /* Debug */,
+				AF2B3BC11A197CC300DDF2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF2B3BA11A197CC300DDF2A7 /* DeitelWelcome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF2B3BA21A197CC300DDF2A7 /* DeitelWelcome.xcdatamodel */,
+			);
+			currentVersion = AF2B3BA21A197CC300DDF2A7 /* DeitelWelcome.xcdatamodel */;
+			path = DeitelWelcome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF2B3B921A197CC300DDF2A7 /* Project object */;
+}
