@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// The "Paint Brush".
 @interface ViewController : UIViewController
 
 

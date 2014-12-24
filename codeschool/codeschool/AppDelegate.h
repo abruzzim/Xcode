@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+// View Controller forward declaration. The "Paint Brush".
+@class ViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+// ViewController forward declaration. The "Paint Brush".
+@property (strong, nonatomic) ViewController *viewController;
 
 @end
 

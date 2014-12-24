@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,16 +23,11 @@
     CGRect viewRect = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame:viewRect];
     
-    // The "Paint"
-    UIView *colorView = [[UIView alloc] initWithFrame:viewRect];
-    colorView.backgroundColor = [UIColor colorWithRed:0.462 green:0.749 blue:0.937 alpha:1.0];
-    
     // The "Paint Brush"
-    UIViewController *viewController = [[UIViewController alloc] init];
-    viewController.view = colorView;
+    self.viewController = [[ViewController alloc] init];
     
     // Set the root view controller.
-    self.window.rootViewController = viewController;
+    self.window.rootViewController = self.viewController;
     
     // Send the message making the view visible.
     [self.window makeKeyAndVisible];
