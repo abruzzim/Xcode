@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0C4A1E90-9046-4954-B1A0-6191C2017218</string>
+	<key>IDESourceControlProjectName</key>
+	<string>playground2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>15719E78C3867EF9DB3AD1B5AD05433E8DF2E4B9</key>
+		<string>https://github.com/abruzzim/Xtext.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>playground2/playground2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>15719E78C3867EF9DB3AD1B5AD05433E8DF2E4B9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/abruzzim/Xtext.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15719E78C3867EF9DB3AD1B5AD05433E8DF2E4B9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15719E78C3867EF9DB3AD1B5AD05433E8DF2E4B9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xcode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
