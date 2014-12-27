@@ -11,8 +11,8 @@
 // The "Paint Brush".
 @interface ViewController : UIViewController
 
-- (void)chgBgTransparencyHalf:(id)sender;
-- (void)chgBgTransparencyFull:(id)sender;
+- (void)setViewBgColor:(id)sender;
+- (void)chgBgTransparency:(id)sender;
 - (void)setBgColorPurple:(id)sender;
 
 @end
