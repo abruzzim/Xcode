@@ -19,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // The "Canvas"
-    CGRect viewRect = [[UIScreen mainScreen] bounds];
-    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    // The "Canvas";
+    CGRect viewRect = [[UIScreen mainScreen] bounds];           // Object that identifies a physical screen connected to the device.
+    self.window = [[UIWindow alloc] initWithFrame:viewRect];    // Object that provides drawing support for the screen.
     
     // The "Paint Brush"
     self.viewController = [[ViewController alloc] init];
