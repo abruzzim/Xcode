@@ -30,94 +30,104 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.462 green:0.999 blue:0.999 alpha:1.0];
     
     // Declare, place and size a label
-    UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake((375/2)-(200/2), 30, 200, 44)]; // The "Paint"
+    self.headerLbl = [[UILabel alloc] initWithFrame:CGRectMake((375/2)-(200/2), 30, 200, 44)]; // The "Paint"
     // Declare the label background.
-    lbl.backgroundColor = [UIColor redColor];
+    self.headerLbl.backgroundColor = [UIColor redColor];
     // Declare the label text.
-    lbl.text = @"Code School Test Label";
+    self.headerLbl.text = @"Code School Test Label";
     // Add the label as a subview.
-    [self.view addSubview:lbl];
+    [self.view addSubview:self.headerLbl];
     
     // 50% Transparency Button
     // Declare a rounded rectangle button.
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem]; // The "Paint": Control view object.
+    self.fiftyPctBtn = [UIButton buttonWithType:UIButtonTypeSystem]; // The "Paint": Control view object.
     // Set the button's corner radius.
-    btn2.layer.cornerRadius = 5;
+    self.fiftyPctBtn.layer.cornerRadius = 5;
     // Place and size the button on the screen.
-    btn2.frame = CGRectMake((375/2)-(170/2), 150, 170, 44);
+    self.fiftyPctBtn.frame = CGRectMake((375/2)-(170/2), 150, 170, 44);
     // Set the button's background color.
-    btn2.backgroundColor = [UIColor greenColor];
+    self.fiftyPctBtn.backgroundColor = [UIColor greenColor];
     // Set the button's normal title.
-    [btn2 setTitle:@"Bg Transparency 50%" forState:UIControlStateNormal];
+    [self.fiftyPctBtn setTitle:@"Bg Transparency 50%" forState:UIControlStateNormal];
     // Set the button's touched title
-    [btn2 setTitle:@"Btn2 Touched" forState:UIControlStateHighlighted];
+    [self.fiftyPctBtn setTitle:@"fiftyPctBtn Touched" forState:UIControlStateHighlighted];
     // Add a control event
     //   that sends a message to the ViewController,
     //   to call the "chgBgTransparency" method,
     //   when the button is touched then released.
-    [btn2 addTarget:self action:@selector(chgBgTransparency:) forControlEvents:UIControlEventTouchUpInside];
+    [self.fiftyPctBtn addTarget:self
+                         action:@selector(setBgTransparency:)
+               forControlEvents:UIControlEventTouchUpInside];
     // Add the button as a subview.
-    [self.view addSubview:btn2];
+    [self.view addSubview:self.fiftyPctBtn];
     
     // 100% Transparency Button
-    UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn3.backgroundColor = [UIColor orangeColor];
-    btn3.frame = CGRectMake((375/2)-(170/2), 200, 170, 44);
-    btn3.layer.cornerRadius = 5;
-    [btn3 setTitle:@"Bg Transparency 100%" forState:UIControlStateNormal];
-    [btn3 setTitle:@"Btn3 Touched" forState:UIControlStateHighlighted];
-    [btn3 addTarget:self action:@selector(chgBgTransparency:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn3];
+    self.hundredPctBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.hundredPctBtn.backgroundColor = [UIColor orangeColor];
+    self.hundredPctBtn.frame = CGRectMake((375/2)-(170/2), 200, 170, 44);
+    self.hundredPctBtn.layer.cornerRadius = 5;
+    [self.hundredPctBtn setTitle:@"Bg Transparency 100%" forState:UIControlStateNormal];
+    [self.hundredPctBtn setTitle:@"hundredBtn Touched" forState:UIControlStateHighlighted];
+    [self.hundredPctBtn addTarget:self
+                           action:@selector(setBgTransparency:)
+                 forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.hundredPctBtn];
     
     // Purple Background Button
     // Declare a rounded rectangle button.
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeSystem]; // The "Paint"; Control view object.
+    self.purpleBtn = [UIButton buttonWithType:UIButtonTypeSystem]; // The "Paint"; Control view object.
     // Set the button's corner radius.
-    btn1.layer.cornerRadius = 5;
+    self.purpleBtn.layer.cornerRadius = 5;
     // Place and size the button on the screen.
-    btn1.frame = CGRectMake((375/2)-(140/2), 250, 140, 44);
+    self.purpleBtn.frame = CGRectMake((375/2)-(140/2), 250, 140, 44);
     // Set the button's background color.
-    btn1.backgroundColor = [UIColor yellowColor];
+    self.purpleBtn.backgroundColor = [UIColor yellowColor];
     // Set the button's normal title.
-    [btn1 setTitle:@"Make Purple" forState:UIControlStateNormal];
+    [self.purpleBtn setTitle:@"Make Purple" forState:UIControlStateNormal];
     // Set the button's touched title
-    [btn1 setTitle:@"Btn1 Touched" forState:UIControlStateHighlighted];
+    [self.purpleBtn setTitle:@"Btn1 Touched" forState:UIControlStateHighlighted];
     // Add control event.
-    [btn1 addTarget:self action:@selector(setBgColorPurple:) forControlEvents:UIControlEventTouchUpInside];
+    [self.purpleBtn addTarget:self
+                       action:@selector(setBgColorPurple:)
+             forControlEvents:UIControlEventTouchUpInside];
     // Add the button as a subview.
-    [self.view addSubview:btn1];
+    [self.view addSubview:self.purpleBtn];
     
     // Green Background Button
-    UIButton *greenBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    greenBtn.layer.cornerRadius = 10;
-    greenBtn.frame = CGRectMake((375/2)-(100/2), 300, 100, 44);
-    greenBtn.backgroundColor = [UIColor magentaColor];
-    [greenBtn setTitle:@"Make Green" forState:UIControlStateNormal];
-    [greenBtn addTarget:self action:@selector(setViewBgColor:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:greenBtn];
+    self.greenBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.greenBtn.layer.cornerRadius = 10;
+    self.greenBtn.frame = CGRectMake((375/2)-(100/2), 300, 100, 44);
+    self.greenBtn.backgroundColor = [UIColor magentaColor];
+    [self.greenBtn setTitle:@"Make Green" forState:UIControlStateNormal];
+    [self.greenBtn addTarget:self
+                      action:@selector(setViewBgColor:)
+            forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.greenBtn];
     
     // Blue Background Button
-    UIButton *blueBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    blueBtn.layer.cornerRadius = 10;
-    blueBtn.frame = CGRectMake((375/2)-(100/2), 350, 100, 44);
-    blueBtn.backgroundColor = [UIColor grayColor];
-    [blueBtn setTitle:@"Make Blue" forState:UIControlStateNormal];
-    [blueBtn addTarget:self action:@selector(setViewBgColor:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:blueBtn];
+    self.blueBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.blueBtn.layer.cornerRadius = 10;
+    self.blueBtn.frame = CGRectMake((375/2)-(100/2), 350, 100, 44);
+    self.blueBtn.backgroundColor = [UIColor grayColor];
+    [self.blueBtn setTitle:@"Make Blue" forState:UIControlStateNormal];
+    [self.blueBtn addTarget:self
+                     action:@selector(setViewBgColor:)
+           forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.blueBtn];
 }
 
 // Instance method that returns nothing
 // called "chgBgTransparency"
 // that takes an id (pointer to an instance) of a UIButton class instance
 // called "sender".
-- (void)chgBgTransparency:(UIButton *)sender
+- (void)setBgTransparency:(UIButton *)sender
 {
     // Log the event to the console.
     NSLog(@"chgBgTransparency event; Sending object is: %@", sender);
     
-    // Examine the sender's (button's) properties
+    // Examine the sender (the object)
     // to determine the correct action to take.
-    if ([sender.titleLabel.text isEqualToString:@"Btn2 Touched"]) {
+    if ([sender isEqual:self.fiftyPctBtn]) {
         // Set the root view's background transparency to 1/2.
         self.view.alpha = 0.5;
     } else {
@@ -141,7 +151,7 @@
     
     // Examine the sender's (button's) properties
     // to determine the correct action to take.
-    if ([sender.titleLabel.text isEqualToString:@"Make Green"]) {
+    if ([sender isEqual:self.greenBtn]) {
         self.view.backgroundColor = [UIColor greenColor];
     } else {
         self.view.backgroundColor = [UIColor blueColor];
