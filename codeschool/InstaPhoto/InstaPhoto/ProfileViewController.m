@@ -15,7 +15,9 @@
 @implementation ProfileViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     // Custom view controller behavior.
     self.title = @"Profile";
     self.view.backgroundColor = [UIColor yellowColor];

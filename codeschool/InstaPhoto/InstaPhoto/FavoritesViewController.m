@@ -15,12 +15,27 @@
 @implementation FavoritesViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     // Custom view controller behavior.
     self.title = @"Favorites";
     self.view.backgroundColor = [UIColor orangeColor];
     self.tabBarItem.image = [UIImage imageNamed:@"Favorite"];
+    
+    // Create an image view object to display an image.
+    UIImageView *myLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tapestry_logo.jpg"]];
+    
+    // Scale content to fit in the view's frame, while
+    // preserving the original aspect ratio.
+    [myLogo setContentMode:UIViewContentModeTop];
+    
+    // Set the frame, which descibes the view's location and size
+    // in its superview's coordinate system.
+    myLogo.frame = self.view.frame;
+    
+    // Add the profile view as a subview.
+    [self.view addSubview:myLogo];
 }
 
 - (void)didReceiveMemoryWarning {
