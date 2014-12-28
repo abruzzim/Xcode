@@ -14,6 +14,9 @@
 		AFADA0491A4FC33400637F67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFADA0481A4FC33400637F67 /* Images.xcassets */; };
 		AFADA04C1A4FC33400637F67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFADA04A1A4FC33400637F67 /* LaunchScreen.xib */; };
 		AFADA0581A4FC33400637F67 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFADA0571A4FC33400637F67 /* InstaPhotoTests.m */; };
+		AFADA0661A50513100637F67 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFADA0651A50513100637F67 /* FeedViewController.m */; };
+		AFADA0691A5053C100637F67 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFADA0681A5053C100637F67 /* FavoritesViewController.m */; };
+		AFADA06C1A50554500637F67 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFADA06B1A50554500637F67 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		AFADA0511A4FC33400637F67 /* InstaPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFADA0561A4FC33400637F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFADA0571A4FC33400637F67 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
+		AFADA0641A50513100637F67 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedViewController.h; path = ../FeedViewController.h; sourceTree = "<group>"; };
+		AFADA0651A50513100637F67 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedViewController.m; path = ../FeedViewController.m; sourceTree = "<group>"; };
+		AFADA0671A5053C100637F67 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		AFADA0681A5053C100637F67 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		AFADA06A1A50554500637F67 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		AFADA06B1A50554500637F67 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,12 @@
 			children = (
 				AFADA03F1A4FC33300637F67 /* AppDelegate.h */,
 				AFADA0401A4FC33300637F67 /* AppDelegate.m */,
+				AFADA0641A50513100637F67 /* FeedViewController.h */,
+				AFADA0651A50513100637F67 /* FeedViewController.m */,
+				AFADA0671A5053C100637F67 /* FavoritesViewController.h */,
+				AFADA0681A5053C100637F67 /* FavoritesViewController.m */,
+				AFADA06A1A50554500637F67 /* ProfileViewController.h */,
+				AFADA06B1A50554500637F67 /* ProfileViewController.m */,
 				AFADA0421A4FC33300637F67 /* ViewController.h */,
 				AFADA0431A4FC33300637F67 /* ViewController.m */,
 				AFADA0451A4FC33400637F67 /* Main.storyboard */,
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFADA0691A5053C100637F67 /* FavoritesViewController.m in Sources */,
 				AFADA0441A4FC33300637F67 /* ViewController.m in Sources */,
 				AFADA0411A4FC33300637F67 /* AppDelegate.m in Sources */,
+				AFADA0661A50513100637F67 /* FeedViewController.m in Sources */,
+				AFADA06C1A50554500637F67 /* ProfileViewController.m in Sources */,
 				AFADA03E1A4FC33300637F67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +430,7 @@
 				AFADA05D1A4FC33400637F67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFADA05E1A4FC33400637F67 /* Build configuration list for PBXNativeTarget "InstaPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +439,7 @@
 				AFADA0601A4FC33400637F67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

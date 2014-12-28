@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FeedViewController.h"
+#import "FavoritesViewController.h"
+#import "ProfileViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,19 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // Instantiate the View Controllers
-    UIViewController *feedViewController = [[UIViewController alloc] init];
-    feedViewController.title = @"Feed";
-    feedViewController.view.backgroundColor = [UIColor blueColor];
-    feedViewController.tabBarItem.image = [UIImage imageNamed:@"Feed"];
-    UIViewController *favoritesViewController = [[UIViewController alloc] init];
-    favoritesViewController.title = @"Favorites";
-    favoritesViewController.view.backgroundColor = [UIColor orangeColor];
-    favoritesViewController.tabBarItem.image = [UIImage imageNamed:@"Favorite"];
-    UIViewController *profileViewController = [[UIViewController alloc] init];
-    profileViewController.title = @"Profile";
-    profileViewController.view.backgroundColor = [UIColor yellowColor];
-    profileViewController.tabBarItem.image = [UIImage imageNamed:@"Profile"];
+    // Instantiate the Custom View Controllers
+    FeedViewController *feedViewController = [[FeedViewController alloc] init];
+    
+    FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+    
+    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
     
     // Instantiate a Tab Bar Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
@@ -41,10 +37,10 @@
     // Set the window to the physical device screen.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // Set the Tab Bar Controller instance to the window's root view controller.
+    // Set the window's root view controller to the Tab Bar Controller instance.
     self.window.rootViewController = tabBarController;
     
-    // Send the message to make the view visible.
+    // Send the message to the window to make the view visible.
     [self.window makeKeyAndVisible];
     
     return YES;
