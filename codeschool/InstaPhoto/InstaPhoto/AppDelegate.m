@@ -21,20 +21,27 @@
     UIViewController *feedViewController = [[UIViewController alloc] init];
     feedViewController.title = @"Feed";
     feedViewController.view.backgroundColor = [UIColor blueColor];
+    feedViewController.tabBarItem.image = [UIImage imageNamed:@"Feed"];
     UIViewController *favoritesViewController = [[UIViewController alloc] init];
     favoritesViewController.title = @"Favorites";
     favoritesViewController.view.backgroundColor = [UIColor orangeColor];
+    favoritesViewController.tabBarItem.image = [UIImage imageNamed:@"Favorite"];
+    UIViewController *profileViewController = [[UIViewController alloc] init];
+    profileViewController.title = @"Profile";
+    profileViewController.view.backgroundColor = [UIColor yellowColor];
+    profileViewController.tabBarItem.image = [UIImage imageNamed:@"Profile"];
     
     // Instantiate a Tab Bar Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     // Add View Controllers to the Tab Bar Controller
-    [tabBarController setViewControllers:@[feedViewController, favoritesViewController]];
+    [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]
+                                animated:YES];
     
     // Set the window to the physical device screen.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // Set the root controller.
+    // Set the Tab Bar Controller instance to the window's root view controller.
     self.window.rootViewController = tabBarController;
     
     // Send the message to make the view visible.
