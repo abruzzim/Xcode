@@ -26,6 +26,7 @@
     // Create an image view object to display an image.
     UIImageView *myView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Me.jpg"]];
     
+/*
     // Scale content to fit in the view's frame, while
     // preserving the original aspect ratio.
     [myView setContentMode:UIViewContentModeScaleAspectFill];
@@ -33,6 +34,9 @@
     // Set the frame, which descibes the view's location and size
     // in its superview's coordinate system.
     myView.frame = self.view.frame;
+*/
+    // Reduce the size of the image by specifying a CGRect
+    myView.frame = CGRectMake(20, 30, 100, 160);
     
     // Add the profile view as a subview.
     [self.view addSubview:myView];
