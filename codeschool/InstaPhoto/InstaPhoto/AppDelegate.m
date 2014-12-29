@@ -21,18 +21,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Instantiate the Custom View Controllers
-    FeedViewController *feedViewController = [[FeedViewController alloc] init];
-    
+    FeedViewController      *feedViewController      = [[FeedViewController alloc] init];
     FavoritesViewController *favoritesViewController = [[FavoritesViewController alloc] init];
+    ProfileViewController   *profileViewController   = [[ProfileViewController alloc] init];
     
-    ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+    // Instantiate the Navigation Controllers for the Custom View Controllers
+    UINavigationController *feedNavController      = [[UINavigationController alloc] initWithRootViewController:feedViewController];
+    UINavigationController *favoritesNavController = [[UINavigationController alloc] initWithRootViewController:favoritesViewController];
+    UINavigationController *profileNavController   = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     
-    // Instantiate a Tab Bar Controller
+    // Instantiate the Tab Bar Controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    // Add View Controllers to the Tab Bar Controller
-    [tabBarController setViewControllers:@[feedViewController, favoritesViewController, profileViewController]
+    // Add Nav Controllers to the Tab Bar Controller
+    [tabBarController setViewControllers:@[feedNavController, favoritesNavController, profileNavController]
                                 animated:YES];
+    ////tabBarController.viewControllers = @[feedNavController, favoritesNavController, profileNavController];
     
     // Set the window to the physical device screen.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -40,7 +44,7 @@
     // Set the window's root view controller to the Tab Bar Controller instance.
     self.window.rootViewController = tabBarController;
     
-    // Send the message to the window to make the view visible.
+    // Send a message to the window to make the view visible.
     [self.window makeKeyAndVisible];
     
     return YES;

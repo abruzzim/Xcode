@@ -21,18 +21,20 @@
     // Custom view controller behavior.
     self.title = @"Favorites";
     self.view.backgroundColor = [UIColor orangeColor];
-    self.tabBarItem.image = [UIImage imageNamed:@"Favorite"];
+    self.navigationController.tabBarItem.image = [UIImage imageNamed:@"Favorite"];
     
     // Create an image view object to display an image.
     UIImageView *myLogo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tapestry_logo.jpg"]];
     
     // Scale content to fit in the view's frame, while
     // preserving the original aspect ratio.
-    [myLogo setContentMode:UIViewContentModeTop];
+    [myLogo setContentMode:UIViewContentModeScaleAspectFill];
     
     // Set the frame, which descibes the view's location and size
     // in its superview's coordinate system.
-    myLogo.frame = self.view.frame;
+    //// Deprecated with Nav Controller --> myLogo.frame = self.view.frame;
+    // Define a CG Rectangle to offset the image when using a Nav Controller
+    myLogo.frame = CGRectMake(20, 80, 64, 64);
     
     // Add the profile view as a subview.
     [self.view addSubview:myLogo];

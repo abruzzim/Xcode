@@ -15,12 +15,13 @@
 @implementation FeedViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     // Custom view controller behavior.
     self.title = @"Feed";
     self.view.backgroundColor = [UIColor blueColor];
-    self.tabBarItem.image = [UIImage imageNamed:@"Feed"];
+    self.navigationController.tabBarItem.image = [UIImage imageNamed:@"Feed"];
 }
 
 - (void)didReceiveMemoryWarning {

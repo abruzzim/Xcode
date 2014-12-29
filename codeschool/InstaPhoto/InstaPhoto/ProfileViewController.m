@@ -21,12 +21,12 @@
     // Custom view controller behavior.
     self.title = @"Profile";
     self.view.backgroundColor = [UIColor yellowColor];
-    self.tabBarItem.image = [UIImage imageNamed:@"Profile"];
+    self.navigationController.tabBarItem.image = [UIImage imageNamed:@"Profile"];
     
     // Scroll View - class supports displaying content that is
     // larger than the size of the application's window.
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    // Set the interger bit mask that determines how the receiver resizes
+    // Set the integer bit mask that determines how the receiver resizes
     // itself when its superview's bounds change.
     self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     // Set the size of the content view.
